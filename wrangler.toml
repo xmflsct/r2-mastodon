@@ -1,0 +1,16 @@
+name = "r2-mastodon"
+main = "src/index.ts"
+compatibility_date = "2022-05-14"
+
+account_id = "4b99fe044748e20b67286e12a4f239fb"
+workers_dev = false
+routes = [
+  { pattern = "social-files.xmflsct.com/accounts", zone_name = "xmflsct.com" },
+  { pattern = "social-files.xmflsct.com/cache", zone_name = "xmflsct.com" },
+  { pattern = "social-files.xmflsct.com/custom_emojis", zone_name = "xmflsct.com" },
+  { pattern = "social-files.xmflsct.com/media_attachments", zone_name = "xmflsct.com" },
+]
+
+[[r2_buckets]]
+binding = 'Mastodon'
+bucket_name = 'mastodon'
